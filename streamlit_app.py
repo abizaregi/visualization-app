@@ -6,7 +6,6 @@ st.set_page_config(
     page_title="Visualization with anotation", page_icon="💬", layout="centered"
 )
 st.title("💬 visualization with annotation")
-source = pd.read_csv('indexData.csv')
 
 def space(num_lines=1):
     for _ in range(num_lines):
@@ -90,7 +89,7 @@ def get_chart_2(data):
 
 st.write("Give more context to your visualization using annotations!")
 
-source = pd.read_csv('example-app-time-series-annotation\indexData.csv')
+source = pd.read_csv('indexData.csv')
 source['Date'] = pd.to_datetime(source['Date'])
 indexSelected = source.Index.unique()
 index = st.multiselect('select index to display', indexSelected, indexSelected[:5])
