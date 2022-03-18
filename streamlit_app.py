@@ -6,7 +6,7 @@ st.set_page_config(
     page_title="Visualization with anotation", page_icon="💬", layout="centered"
 )
 st.title("💬 visualization with annotation")
-source = pd.read_csv('example-app-time-series-annotation\indexData.csv')
+source = pd.read_csv('indexData.csv')
 
 def space(num_lines=1):
     for _ in range(num_lines):
